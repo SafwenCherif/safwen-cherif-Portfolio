@@ -1,0 +1,163 @@
+// this comtains the data we are gonna for AboutMe component and slider component 
+
+export const AboutData = [
+  {
+    count: 1,
+    title: "Programming Languages",
+    img: "/first.svg",
+    array: [
+      "Python",
+      "Java",
+      "JavaScript",
+      "PHP",
+    ],
+  },
+  {
+    count: 2,
+    title: "Front-end Development",
+    img: "/second.svg",
+    array: [
+      "HTML / CSS",
+      "React.js",
+      "Next.js",
+      "JavaScript (ES6+)",
+    ],
+  },
+  {
+    count: 3,
+    title: "Back-end Development",
+    img: "/third.svg",
+    array: [
+      "Node.js / Express.js",
+      "Laravel",
+      "Symfony",
+      "Spring Boot",
+      "Flask",
+    ],
+  },
+  {
+    count: 4,
+    title: "Databases & Data",
+    img: "/fourth.svg",
+    array: [
+      "MySQL",
+      "MongoDB",
+      "SQLite",
+      "Data Warehousing",
+      "ETL Pipelines",
+      "Power Query",
+      "Power BI",
+    ],
+  },
+  {
+    count: 5,
+    title: "Data Science & AI",
+    img: "/fifth.svg",
+    array: [
+      "Pandas",
+      "NumPy",
+      "Data Analysis",
+      "Data Visualization",
+      "Power BI Dashboards",
+    ],
+  },
+  {
+    count: 6,
+    title: "Tools & Methodologies",
+    img: "/sisxth.svg",
+    array: [
+      "Git / GitHub",
+      "UML",
+      "XAMPP / Laragon",
+      "Android Studio",
+      "Firebase",
+      "Postman",
+      "Agile / Scrum",
+    ],
+  },
+];
+
+
+// this is for the slider 
+export const DataArray = [
+  {
+    title: "Smart School Attendance and Analytics System",
+    name: "Alexander Academy Attendance System",
+    des: "A comprehensive school attendance and analytics system developed for Alexander Academy in Canada. This project was fully completed during a 3-month summer internship, featuring dashboards for real-time monitoring, authentication, role-based access control, and advanced data visualization capabilities.",
+    des1: "This project was built using React.js, Redux, Flask, Python, and JavaScript. It includes real-time monitoring dashboards, secure authentication systems, role-based access control, and comprehensive data visualization features to help administrators track and analyze student attendance patterns.",
+    technologies: ["React.js", "Redux", "Flask", "Python", "JavaScript"],
+    images: ["/projects/registre1.jpeg", "/projects/registre2.jpeg", "/projects/registre3.jpeg","/projects/registre4.jpeg","/projects/registre5.jpeg","/projects/registre6.jpeg","/projects/registre7.jpeg"],
+  },
+  {
+    title: "Hannibal Market - Multi-Vendor E-Commerce Platform",
+    name: "Hannibal Market",
+    des: "A full-featured multi-vendor e-commerce platform with integrated real-time messaging and comprehensive vendor management features. Developed following agile practices and delivered as a complete production-ready solution.",
+    des1: "This platform was built using Laravel, JavaScript, jQuery, Blade templates, HTML, and CSS. It features real-time messaging capabilities, advanced vendor management tools, and a complete e-commerce solution ready for production deployment.",
+    technologies: ["Laravel", "JavaScript", "jQuery", "Blade", "HTML", "CSS"],
+    images: ["/projects/ecommerce1.png","/projects/ecommerce2.png","/projects/ecommerce3.png","/projects/ecommerce4.png","/projects/ecommerce5.png","/projects/ecommerce6.png","/projects/ecommerce7.png","/projects/ecommerce8.png","/projects/ecommerce9.png","/projects/ecommerce10.png","/projects/ecommerce11.png","/projects/ecommerce12.png","/projects/ecommerce13.png","/projects/ecommerce14.png","/projects/ecommerce15.png","/projects/ecommerce16.png","/projects/ecommerce17.png"],
+  },
+  {
+    title: "Data Warehouse Project – Power BI vs Python",
+    name: "Northwind Data Warehouse",
+    des: "Designed and implemented a dual-implementation Data Warehouse using the Northwind database. Built comprehensive ETL pipelines and analytical dashboards using both Python with SQLAlchemy and Power BI with Power Query.",
+    des1: "This project demonstrates expertise in data engineering with dual implementations using Python (SQLAlchemy) and Power BI (Power Query). It includes complete ETL pipelines, data transformation processes, and interactive analytical dashboards for business intelligence. You can find the github repo of this project in this link: https://github.com/SafwenCherif/Data-Warehouse-BI-Project",
+    technologies: ["Python", "SQLAlchemy", "Power BI", "Power Query", "ETL", "SQL"],
+    images: ["/projects/dw1.png", "/projects/dw2.png", "/projects/dw3.png", "/projects/dw4.png","/projects/dw5.png","/projects/dw6.png","/projects/dw7.png"],
+  },
+  {
+    title: "Mobile E-Commerce Application with Delivery System",
+    name: "E-Commerce Mobile App",
+    des: "Developed a comprehensive Android e-commerce application featuring order tracking, a complete delivery system, and in-app messaging capabilities. Built with modern mobile development practices and cloud integration.",
+    des1: "This Android application was developed using Android Studio, Java, Firebase, and Cloudinary. It includes full e-commerce functionality, real-time order tracking, delivery management system, and integrated messaging features for seamless customer communication.",
+    technologies: ["Android Studio", "Java", "Firebase", "Cloudinary"],
+    images: ["/reactportfolio.png", "/reactportfolio.png", "/reactportfolio.png"],
+  },
+  {
+  title: "Hotel Management System",
+  name: "Hotel Management System (Java Swing)",
+  des: "A comprehensive desktop application for managing hotel operations including room reservations, employee management, and customer check-in/checkout processes.",
+  des1: "This desktop application provides complete hotel management functionality for administrators to manage rooms, employees, and customer reservations. Features include real-time room availability tracking, automated billing, customer check-in/checkout systems, and employee scheduling. The system uses Java Swing for an intuitive desktop interface and JDBC for seamless database connectivity with MySQL.",
+  technologies: ["Java", "Java Swing", "JDBC", "MySQL", "XAMPP"],
+  images: ["/projects/hotel1.png", "/projects/hotel2.png", "/projects/hotel3.png","/projects/hotel4.png","/projects/hotel5.png","/projects/hotel6.png","/projects/hotel7.png","/projects/hotel8.png","/projects/hotel9.png","/projects/hotel10.png"],
+},
+{
+  title: "Health Management System",
+  name: "Web-Based Health Management System",
+  des: "A comprehensive web-based healthcare management platform for managing medical professionals, patient records, appointments, and administrative operations.",
+  des1: "This full-featured web application provides complete healthcare management functionality including doctor profiles management, patient electronic health records (EHR), appointment scheduling system, prescription management, billing and invoicing, and role-based access control for administrators, doctors, and patients. Built with Django framework for robust backend functionality and secure data handling.  You can find the github repo of this project in this link: https://github.com/SafwenCherif/hospital-system",
+  technologies: ["HTML", "CSS", "Django", "SQLite", "Python", "Bootstrap"],
+  images: ["/projects/h1.png", "/projects/h2.png", "/projects/h3.png", "/projects/h4.png", "/projects/h5.png", "/projects/h6.png", "/projects/h7.png", "/projects/h8.png", "/projects/h9.png", "/projects/h10.png", "/projects/h11.png", "/projects/h12.png", "/projects/h13.png", "/projects/h14.png", "/projects/h15.png"],
+},
+{
+  title: "EduCore - E-Learning Platform",
+  name: "EduCore",
+  des: "A comprehensive Udemy-like e-learning platform where users can enroll in courses, instructors can create content, and administrators manage the entire educational ecosystem.",
+  des1: "EduCore is a full-featured e-learning platform that mimics popular online course marketplaces. The system includes role-based access for students, instructors, and administrators. Instructors can create, manage, and publish courses with multimedia content, while students can browse, enroll, and track their learning progress. Features include video lectures, quizzes, assignments, progress tracking, certification, and a secure payment system for course purchases.",
+  technologies: ["Laravel", "PHP", "JavaScript", "jQuery", "MySQL", "Laragon", "HTML", "CSS", "Bootstrap", "Blade"],
+  images: ["/projects/learning1.png", "/projects/learning2.png", "/projects/learning3.png", "/projects/learning4.png", "/projects/learning5.png", "/projects/learning6.png", "/projects/learning7.png", "/projects/learning8.png", "/projects/learning9.png", "/projects/learning10.png", "/projects/learning11.png", "/projects/learning12.png", "/projects/learning13.png", "/projects/learning14.png"],
+},
+  {
+  title: "MyBloggy - Blogging Platform",
+  name: "MyBloggy",
+  des: "A full-featured blogging platform where users can create accounts, publish posts, and follow each other. Built with modern web technologies for an engaging social blogging experience.",
+  des1: "This blogging platform includes user authentication, post creation and management, social features like following other users, and a complete content management system. Developed using React.js, Node.js, Express.js, and MongoDB for a scalable and modern blogging experience. You can find the github repo of this project in this link: https://github.com/SafwenCherif/MyBloggy-Blogging-Platform",
+  technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "CSS", "HTML", "REST API"],
+  images: ["/projects/blog1.png", "/projects/blog2.png", "/projects/blog3.png", "/projects/blog4.png", "/projects/blog5.png", "/projects/blog6.png", "/projects/blog7.png", "/projects/blog8.png", "/projects/blog9.png"],
+},
+{
+  title: "TripSummit - Travel Agency Platform",
+  name: "TripSummit",
+  des: "A comprehensive travel agency web platform for managing travel bookings, destinations, and customer interactions. Built with Laravel and modern web technologies.",
+  des1: "This travel agency platform provides complete functionality for managing travel bookings, destinations, customer information, and travel packages. Developed using HTML, CSS, Blade templates, Laravel, MySQL, and Laragon for a professional travel management solution.",
+  technologies: ["HTML", "CSS", "Blade", "Laravel", "MySQL", "Laragon", "PHP", "JavaScript", "Bootstrap"],
+  images: ["/projects/travel1.png", "/projects/travel2.png", "/projects/travel3.png", "/projects/travel4.png", "/projects/travel5.png", "/projects/travel6.png", "/projects/travel7.png", "/projects/travel8.png", "/projects/travel9.png", "/projects/travel10.png"],
+},
+  {
+    title: "Tower-Defence Game",
+    name: "Tower-Defence 2D Game",
+    des: "A 2D tower defense game developed using Python and Pygame. Features strategic gameplay, multiple tower types, and wave-based enemy systems.",
+    des1: "This 2D game was developed using Python and Pygame, featuring strategic tower defense gameplay, multiple tower types with different abilities, wave-based enemy systems, and engaging game mechanics for an immersive gaming experience.",
+    technologies: ["Python", "Pygame"],
+    images: ["/image1.png", "/image2.png", "/image3.png"],
+  },
+];
