@@ -104,14 +104,14 @@ export const DataArray = [
     technologies: ["Python", "SQLAlchemy", "Power BI", "Power Query", "ETL", "SQL"],
     images: ["/projects/dw1.png", "/projects/dw2.png", "/projects/dw3.png", "/projects/dw4.png","/projects/dw5.png","/projects/dw6.png","/projects/dw7.png"],
   },
-  {
-    title: "Mobile E-Commerce Application with Delivery System",
-    name: "E-Commerce Mobile App",
-    des: "Developed a comprehensive Android e-commerce application featuring order tracking, a complete delivery system, and in-app messaging capabilities. Built with modern mobile development practices and cloud integration.",
-    des1: "This Android application was developed using Android Studio, Java, Firebase, and Cloudinary. It includes full e-commerce functionality, real-time order tracking, delivery management system, and integrated messaging features for seamless customer communication.",
-    technologies: ["Android Studio", "Java", "Firebase", "Cloudinary"],
-    images: ["/reactportfolio.png", "/reactportfolio.png", "/reactportfolio.png"],
-  },
+  // {
+  //   title: "Mobile E-Commerce Application with Delivery System",
+  //   name: "E-Commerce Mobile App",
+  //   des: "Developed a comprehensive Android e-commerce application featuring order tracking, a complete delivery system, and in-app messaging capabilities. Built with modern mobile development practices and cloud integration.",
+  //   des1: "This Android application was developed using Android Studio, Java, Firebase, and Cloudinary. It includes full e-commerce functionality, real-time order tracking, delivery management system, and integrated messaging features for seamless customer communication.",
+  //   technologies: ["Android Studio", "Java", "Firebase", "Cloudinary"],
+  //   images: ["/reactportfolio.png", "/reactportfolio.png", "/reactportfolio.png"],
+  // },
   {
   title: "Hotel Management System",
   name: "Hotel Management System (Java Swing)",
