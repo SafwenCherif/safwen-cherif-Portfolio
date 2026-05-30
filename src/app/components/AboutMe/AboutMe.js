@@ -16,6 +16,7 @@ export default function AboutMe() {
   const [isFaded, setIsFaded] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [mapData, setMapData] = useState(AboutData[0]);
+  const totalCategories = AboutData.length;
 
   const myFunctions = (data) => {
     setIsFlipped(false);
@@ -32,7 +33,7 @@ export default function AboutMe() {
   };
 
   const HandleNext = () => {
-    if (selectedIndex < 5) {
+    if (selectedIndex < totalCategories - 1) {
       handleCardClick(AboutData[selectedIndex + 1], selectedIndex + 1);
     } else {
       handleCardClick(AboutData[0], 0);
@@ -42,7 +43,7 @@ export default function AboutMe() {
     if (selectedIndex !== 0) {
       handleCardClick(AboutData[selectedIndex - 1], selectedIndex - 1);
     } else {
-      handleCardClick(AboutData[5], 5);
+      handleCardClick(AboutData[totalCategories - 1], totalCategories - 1);
     }
   };
 
@@ -60,26 +61,26 @@ export default function AboutMe() {
             About My Self
           </h1>
           <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
-            Building scalable, data-driven applications with modern technologies
+            Building production-ready software across full-stack, AI, data, and MLOps systems
           </h4>
           <section className="relative flex flex-col lg:flex-row px-5 md:px-24">
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              My name is Safwen. I am a motivated Software Engineering and Data Science student with strong experience in full-stack development, data engineering, and AI-powered systems through academic projects and internships. I am passionate about building scalable, data-driven applications and continuously learning new technologies.
+              My name is Safwen. I am a Software Engineering and Data Science student focused on building reliable digital products across web development, microservices, machine learning, and MLOps. My project work and internships have strengthened my ability to ship scalable solutions with clear architecture and measurable business value.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              I am skilled in multiple programming languages including Java, Python, JavaScript, and PHP. My expertise spans across modern frameworks like React.js, Next.js, Laravel, Symfony, Spring Boot, and Flask. I have hands-on experience with various databases including MySQL, MongoDB, and SQLite, and I specialize in data engineering with tools like Pandas, NumPy, Power BI, and ETL pipelines.
+              My expertise spans Java, Python, JavaScript, PHP, and SQL, with hands-on experience in React.js, Next.js, Node.js, Express.js, Laravel, Symfony, Spring Boot, Flask, FastAPI, gRPC, and GraphQL. I also work with MySQL, MongoDB, SQLite, RxDB, and data engineering workflows such as ETL pipelines, SQLAlchemy, Power BI, and DVC-backed reproducibility.
             </p>
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              Through my projects and internships, I have developed strong professional skills in team collaboration, problem-solving, adaptability, and time management. I follow agile and scrum methodologies to deliver high-quality solutions. Here are the key areas of my expertise:
+              Through my projects and internships, I have also developed practical experience in deep learning, MLOps, Docker, Airflow, MLflow, Kafka, Android development, and agile collaboration. I value clean architecture, maintainability, and thoughtful delivery from experimentation to deployment.
             </p>
           </section>
         </div>
@@ -140,19 +141,19 @@ export default function AboutMe() {
                 }`}
               >
                 <p
-                  class={`text-[#47626D] ${hind.className}  text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100 undefined undefined`}
+                    className={`text-[#47626D] ${hind.className}  text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100 undefined undefined`}
                 >
                   My skills as
                 </p>
-                <h2 class="font-recoletaBold text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100 undefined undefined">
+                  <h2 className="font-recoletaBold text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100 undefined undefined">
                   {mapData?.title}
                 </h2>
 
                 <ul
-                  class={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform  opacity-100 undefined undefined`}
+                    className={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform  opacity-100 undefined undefined`}
                 >
                   {mapData?.array?.map((obj) => (
-                    <li key={obj} class="mb-2">{obj}</li>
+                      <li key={obj} className="mb-2">{obj}</li>
                   ))}
                 </ul>
               </section>

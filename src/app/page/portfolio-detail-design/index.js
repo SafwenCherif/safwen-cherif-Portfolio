@@ -41,8 +41,8 @@ export default function Index({ id, data, DataArray }) {
     }
   }, [DataArray.length, id]);
 
-  // Extract GitHub link from description
-  const githubLink = data?.des1 ? extractGitHubLink(data.des1) : null;
+  // Prefer explicit `repo` field, fallback to URL inside `des1`
+  const githubLink = data?.repo ? data.repo : (data?.des1 ? extractGitHubLink(data.des1) : null);
   const cleanedDescription = data?.des1 ? cleanDescription(data.des1) : data?.des1;
 
   return (
