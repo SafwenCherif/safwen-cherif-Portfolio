@@ -142,7 +142,7 @@ export const DataArray = [
     des: "Designed and implemented a dual-implementation Data Warehouse using the Northwind database. Built comprehensive ETL pipelines and analytical dashboards using both Python with SQLAlchemy and Power BI with Power Query.",
     des1: "This project demonstrates expertise in data engineering with dual implementations using Python (SQLAlchemy) and Power BI (Power Query). It includes complete ETL pipelines, data transformation processes, and interactive analytical dashboards for business intelligence. You can find the github repo of this project in this link: https://github.com/SafwenCherif/Data-Warehouse-BI-Project",
     technologies: ["Python", "SQLAlchemy", "Power BI", "Power Query", "ETL", "SQL"],
-    images: ["/projects/dw1.png", "/projects/dw2.png", "/projects/dw3.png", "/projects/dw4.png","/projects/dw5.png","/projects/dw6.png","/projects/dw7.png"],
+    images: ["/projects/BI100.png","/projects/dw1.png", "/projects/dw2.png", "/projects/dw3.png", "/projects/dw4.png","/projects/dw5.png","/projects/dw6.png","/projects/dw7.png"],
       repo: "https://github.com/SafwenCherif/Data-Warehouse-BI-Project",
   },
   {
