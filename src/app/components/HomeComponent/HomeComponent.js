@@ -147,19 +147,17 @@ const HomeComponent = () => {
             </div>
             {/*implemeting the profile image*/}
             <div className="md:col-span-7 col-span-12 md:pt-[130px] pt-[50px] md:bg-transparent bg-[#d9eef7]">
-              <div className="m-auto container"
-               style={{width: '100%', height: '100%'}}
-              >
+              <div className="m-auto container flex justify-center items-end" style={{ width: '100%', height: '100%' }}>
                 <Image
-                  className="relative -translate-y-12 md:-translate-y-20"
+                  className="relative -translate-y-6 md:-translate-y-12 w-[75%] max-w-[420px] h-auto object-contain mx-auto"
                   alt="Full-Stack Developer"
-                  src="/safwencherif5.png"
+                  src="/safsaf111.png"
                   decoding="async"
                   data-nimg="intrinsic"
                   width={0}
                   height={0}
                   sizes="100vw"
-                  style={{ width: '100%', height: '110%' }} 
+                  style={{ width: '75%', height: 'auto', maxWidth: '420px' }} 
                 />
               </div>
             </div>
