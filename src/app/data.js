@@ -243,5 +243,14 @@ export const DataArray = [
   repo: "https://github.com/Project-SOA/SOA-Project",
   images: ["/projects/microservices.png"],
 },
+{
+  title: "Hotel Reservation MLOps — Complete Project Reference",
+  name: "Hotel Reservation MLOps",
+  des: "Production-grade end-to-end MLOps pipeline: from raw data to a live public prediction API on Google Cloud Run with CI/CD automation through Jenkins, Docker, and Google Container Registry.",
+  des1: "Full project including local training pipeline, Jenkins CI/CD (custom Jenkins image), Dockerfile, MLflow tracking (SQLite), and automated deploys to Cloud Run. Last updated: 2026-07-22. Live app: https://ml-project-254464063395.us-central1.run.app/",
+  technologies: ["Python", "LightGBM", "MLflow", "Flask", "Jenkins", "Docker", "Google Cloud Run", "GCR", "GCS", "CI/CD"],
+  images: ["/projects/hotel-mlops2.png", "/projects/hotel-mlops1.png"],
+  repo: "https://github.com/SafwenCherif/hotel-reservation-mlops",
+},
 
 ];
