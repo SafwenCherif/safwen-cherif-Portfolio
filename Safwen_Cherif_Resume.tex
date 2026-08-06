@@ -1,0 +1,195 @@
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage[margin=0.85in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+
+\setlist[itemize]{noitemsep, topsep=2pt, partopsep=0pt, itemsep=1pt, leftmargin=1.5em}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% FIXED: Improved visual hierarchy command for headings/projects
+\newcommand{\entry}[1]{\noindent{\large\bfseries #1}}
+% Sub-entry for positions/details under main titles
+\newcommand{\subentry}[1]{\noindent\textbf{\textit{#1}}}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\hypersetup{colorlinks=true, urlcolor=black}
+
+\begin{document}
+
+%====================
+% Header
+%====================
+\begin{center}
+    {\LARGE \textbf{Safwen Cherif}} \\[3pt]
+    Software Engineering Student | Co-Founder @ 3aweni.tn \\[3pt]
+    \small
+    \faEnvelope\ \href{mailto:safwencherif4@gmail.com}{safwencherif4@gmail.com} \quad
+    \faGlobe\ \href{https://safwen-cherif-portfolio.vercel.app}{Portfolio} \quad
+    \faGithub\ \href{https://github.com/SafwenCherif}{GitHub} \quad
+    \faPhone\ +216 52 603 967
+\end{center}
+
+%====================
+% Profile
+%====================
+\section*{Professional Summary}
+Software Engineering student specializing in AI, Data Engineering, and scalable software systems, with hands-on experience building full-stack applications and end-to-end MLOps pipelines. Passionate about MLOps, DataOps, and the application of AI in healthcare. Co-founder of \textbf{3aweni.tn}, a startup incubated at GFI, where I lead product architecture and software development from concept to deployment.
+
+%====================
+% Education
+%====================
+\section*{Education}
+
+\entry{Ecole Polytechnique Sousse} \hfill \textit{2024 -- Present} \\
+Software Engineering and Information Systems -- Engineering Degree (Diplôme d'Ingénieur)
+
+\vspace{6pt}
+
+\entry{Higher Institute of Information and Communication Technologies} \hfill \textit{2021 -- 2024} \\
+Bachelor's Degree in Software Engineering and Information Systems
+
+%====================
+% Entrepreneurial Experience
+%====================
+\section*{Entrepreneurial Experience}
+
+\entry{3aweni.tn (Startup, Incubated by GFI)} \hfill \textit{2025 -- Present} \\
+\subentry{Co-Founder \& Software Engineer}
+\begin{itemize}
+    \item Leading design and development of a multi-platform digital services product from concept to nearing production release on Android, now expanding to iOS and Web.
+    \item Collaborating with the GFI Incubator on legal structuring and go-to-market preparation, including the Tunisian Startup Act application.
+    \item Stack: \textbf{Flutter, Next.js, NestJS, Python, Firebase, Supabase, LLM APIs}.
+\end{itemize}
+
+%====================
+% Experience
+%====================
+\section*{Professional Experience -- Internships}
+
+\entry{Elite Council Consulting} \hfill \textit{Jun -- Jul 2025} \\
+\subentry{Software Development Intern (Remote) -- React.js, Flask, MongoDB}
+\begin{itemize}
+    \item Built a smart school attendance system with AI integration, RESTful APIs, and real-time monitoring dashboards.
+    \item Implemented authentication, role-based access control, and data visualization features.
+\end{itemize}
+
+\vspace{6pt}
+
+\entry{Nachd-IT} \hfill \textit{Feb 2024 -- May 2024} \\
+\subentry{Final Year Project Intern (Sousse) -- Laravel, JavaScript, jQuery}
+\begin{itemize}
+    \item Designed and developed \textbf{Hannibal Market}, a multi-vendor e-commerce platform.
+    \item Integrated real-time messaging and vendor management features.
+    \item Followed agile practices and delivered a complete production-ready solution.
+\end{itemize}
+
+\vspace{6pt}
+
+\entry{Nachd-IT} \hfill \textit{Jul 2023 -- Aug 2023} \\
+\subentry{Software Development Intern (Sousse) -- Laravel, MySQL}
+\begin{itemize}
+    \item Developed \textbf{MyLabo}, a dynamic website for a research laboratory.
+    \item Implemented backend logic, database design, and responsive UI components.
+\end{itemize}
+
+%====================
+% Projects
+%====================
+\section*{Key Projects}
+
+\entry{Medical RAG Chatbot -- LLMOps Delivery Pipeline}
+\begin{itemize}
+    \item Built a medical RAG chatbot grounded in an encyclopedia PDF (FAISS + Sentence-Transformers), with typo-tolerant retrieval and Groq/OpenRouter generation via Flask.
+    \item Packaged with Docker (CPU Torch), Jenkins CI/CD, Trivy scanning, and Amazon ECR publishing.
+    \item Stack: \textbf{Python, Flask, LangChain, FAISS, Groq, Docker, Jenkins, Trivy, AWS ECR}.
+\end{itemize}
+
+\vspace{4pt}
+
+\entry{MLOps Pipeline for Real Estate Data (Mubawab.tn)}
+\begin{itemize}
+    \item Built an automated ML pipeline with web scraping, geographic enrichment, modeling, and Airflow-orchestrated retraining; model promotion via MLflow and artifact backup with DVC.
+    \item Stack: \textbf{Python, Airflow, DVC, MLflow, Docker, scikit-learn, BeautifulSoup, Geopy}.
+\end{itemize}
+
+\vspace{4pt}
+
+\entry{YouTube Channel Analytics ELT Pipeline}
+\begin{itemize}
+    \item Built an Airflow-orchestrated ELT pipeline (YouTube Data API $\rightarrow$ dated JSON $\rightarrow$ PostgreSQL staging/core) with Soda quality checks and GitHub Actions CI/CD.
+    \item Stack: \textbf{Python, Airflow, PostgreSQL, Soda Core, pytest, Docker Compose, GitHub Actions}.
+\end{itemize}
+
+\vspace{4pt}
+
+\entry{Anime Recommender -- End-to-End MLOps}
+\begin{itemize}
+    \item Deployed a hybrid TensorFlow embedding recommender (collaborative + content-based) with DVC/GCS, Comet ML tracking, Jenkins CI/CD, GCR, and GKE serving.
+    \item Stack: \textbf{Python, TensorFlow, Flask, DVC, Comet ML, Docker, Jenkins, GKE, GCP}.
+\end{itemize}
+
+\vspace{4pt}
+
+\entry{Food Delivery Microservices Platform}
+\begin{itemize}
+    \item Designed Catalogue/Order/Delivery services with gRPC, REST, GraphQL gateway, and Kafka event-driven sync.
+    \item Stack: \textbf{Node.js, Express, gRPC, GraphQL, Kafka, SQLite, RxDB}.
+\end{itemize}
+
+\vspace{4pt}
+
+\entry{Additional Projects}
+\begin{itemize}
+    \item \textbf{Titanic Survival MLOps}: GCS $\rightarrow$ Airflow ETL $\rightarrow$ Postgres $\rightarrow$ Redis feature store $\rightarrow$ RF training; Flask + Alibi Detect + Prometheus/Grafana.
+    \item \textbf{Hotel Cancellation MLOps}: LightGBM + MLflow; Jenkins CI/CD to Cloud Run. \textbf{NeuroScanAI}: ResNet50 + ResUNet brain-tumor pipeline with FastAPI.
+    \item \textbf{Data Warehouse}: dual ETL (Python/SQLAlchemy + Power BI). \textbf{Hospital Management}: Django EHR web app.
+\end{itemize}
+
+%====================
+% Skills
+%====================
+\section*{Technical Skills}
+\textbf{Languages:} Python, Java, JavaScript, PHP, C, Dart \\
+\textbf{Frameworks:} React.js, Next.js, Nest.js, Node.js, Express, Laravel, Symfony, Flask, Django, Flutter, FastAPI, LangChain \\
+\textbf{Data \& AI:} Pandas, NumPy, Scikit-learn, TensorFlow, Keras, LightGBM, FAISS, Sentence-Transformers, RAG, SMOTE, Alibi Detect, MLflow, DVC, Comet ML, Airflow, Soda Core, ETL/ELT, Data Warehousing, SQLAlchemy, Power BI \\
+\textbf{Databases:} MySQL, MongoDB, SQLite, SQL Server, PostgreSQL, Redis, RxDB, FAISS \\
+\textbf{Backend \& Messaging:} REST, GraphQL, gRPC, Apache Kafka \\
+\textbf{Tools:} Git, Docker, Docker Compose, Jenkins, Kubernetes, Trivy, Prometheus, Grafana, pytest, Postman, Firebase, Android Studio, UML \\
+\textbf{Cloud:} AWS (ECR), Azure, Google Cloud Platform (GCS, GCR, GKE, Cloud Run) \\
+\textbf{Practices:} Agile, Scrum, MLOps, LLMOps, DataOps, CI/CD
+
+%====================
+% Certifications
+%====================
+\section*{Certifications \& Professional Development}
+- \href{https://www.credly.com/badges/5743d473-468f-453d-84d2-47eca7fc469f}{\textbf{IBM Big Data Engineer Certificate}} \\
+- \href{https://www.credly.com/badges/cebb5584-1f45-4a60-aff1-fb95e70e7eb3}{\textbf{Python Specialist Certification (Certiport)}} \\
+- \textbf{Supervised \& Unsupervised Machine Learning} -- DataCamp \\
+- \textbf{MLOps | Machine Learning Operations Specialization} -- Duke University (Coursera) --- In Progress \\
+- \textbf{Data Engineering Specialization Professional Certificate} -- DeepLearning.AI (Coursera) --- In Progress
+
+%====================
+% Languages
+%====================
+\section*{Languages}
+Arabic (Native) \quad|\quad English (Fluent) \quad|\quad French (Fluent)
+
+%====================
+% Activities
+%====================
+\section*{Activities \& Volunteering}
+- \textbf{Red Crescent, Chebba} (2022--Present) -- Treasurer, "Koffet Romdhan" initiative \\
+- \textbf{ACM EPS, Sousse} (2024--Present) -- Member \\
+- \textbf{Polytech Sousse PSC} (2024) -- Public health initiative for primary schools with the Regional Health Delegation of Sousse
+
+\end{document}
