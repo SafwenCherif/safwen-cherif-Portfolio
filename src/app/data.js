@@ -288,5 +288,14 @@ export const DataArray = [
   images: ["/projects/User-survival-mlops1.png", "/projects/User-survival-mlops2.png"],
   repo: "https://github.com/SafwenCherif/User-survival-mlops",
 },
+{
+  title: "Network Security MLOps — Phishing Website Detection",
+  name: "Network Security MLOps",
+  des: "An end-to-end MLOps pipeline for phishing website detection: MongoDB Atlas data store, modular training with schema/drift validation and GridSearchCV, MLflow tracking, Amazon S3 artifact storage, and FastAPI serving on AWS EC2 via Docker and GitHub Actions CI/CD.",
+  des1: "Summary: Training data lives in MongoDB Atlas (PhishingRecords); a four-stage pipeline ingests to a feature-store CSV, validates schema and KS drift, applies KNN imputation, then trains five scikit-learn classifiers (best: Random Forest, test F1 ~0.97). Artifacts and final_model sync to S3; FastAPI exposes /train and /predict (CSV upload → HTML results). Docker entrypoint pulls the latest model from S3; GitHub Actions builds to ECR and deploys on a self-hosted EC2 runner. Dataset: 11,055 records, 30 features.",
+  technologies: ["Python", "scikit-learn", "MongoDB Atlas", "MLflow", "FastAPI", "Amazon S3", "Docker", "Amazon ECR", "AWS EC2", "GitHub Actions", "CI/CD"],
+  images: ["/projects/network-system-mlops.png"],
+  repo: "https://github.com/SafwenCherif/networking-security-mlops",
+},
 
 ];
